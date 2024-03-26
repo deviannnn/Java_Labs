@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Lab7_5" />
+        <module name="Lab7_6" />
+        <module name="Lab7_1" />
+        <module name="Lab7_2" />
+        <module name="Lab7_3" />
+        <module name="Lab7_4" />
+        <module name="Lab7" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Lab7_1" options="-parameters" />
+      <module name="Lab7_2" options="-parameters" />
+      <module name="Lab7_3" options="-parameters" />
+      <module name="Lab7_4" options="-parameters" />
+      <module name="Lab7_5" options="-parameters" />
+      <module name="Lab7_6" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,21 @@
+Phân hệ mới cho phép (1) thực khách/khách hàng, (2) nhân viên phục vụ, (3) nhân viên bếp có thểtương tác với nhau theo thời gian thực, tăng cường trải nghiệm dùng bữa và giảm thiểu sai sót. Thực khách có thể chủ động trong việc gọi món ăn và kiểm soát các món ăn đã gọi, cũng như tổng tiền của hóa đơn. Với nhân viên phục vụ, thay vì phải thực hiện các thao tác thủ công, chẳng hạn, ghi đơn hàng vào phiếu gọi món, chuyển phiêu gọi món cho bếp để chuẩn bị món an, thì việc triển khai phân hệ này cho phép giảm thiểu các thao tác thủ công như trước đây và đảm bảo tính chính xác. Bên cạnh đó, phân hệ cho phép nhân viên bếp kiểm soát các món ăn được gọi từ thực khách, đặc biệt là đảm báo tính chính xác cho các ghi chú từ thực khách, điều mà trước đây thường xảy ra sai sót
+
+Như vậy, tôi có các công việc chính như sau:
+- Nhân viên phục vụ: 
++ Tạo mới một đơn hàng (mở bàn) khi đón tiếp thực khách vào nhà hàng
++ Hỗ trợ thực khách ghi nhận các món ăn vào đơn hàng
++ Kết thúc đơn hàng khi thực khách có yêu cầu thanh toán
+- Nhân viên bếp
++ Đọc các món đơn hàng gọi từ thực khách, trong đó, đơn hàng gồm món ăn và các ghi chú đi kèm
++ Kiểm soát thực đơn - Nhân viên bếp có thể bật/tắt món ăn phụ thuộc vào nguồn nguyên liệu sẵn có
++ Đánh đấu các đơn hàng gọi món đã thực hiện thành công để nhân viên phục vụ mang đến cho thực khách
+- Nhân viên quản lý
++ Thực hiện các công việc như nhân viên phục vụ
++ Tổng hợp các phiếu tính tiền đã được tạo trong ca trực
++ Xem lịch sử các phiếu tính tiền theo thời gian (năm, tháng, ngày)
+
+
+
+
+
+

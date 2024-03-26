@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="product" class="vn.edu.tdtu.Product" />
+
+    <bean id="product1" class="vn.edu.tdtu.Product" scope="prototype">
+        <property name="id" value="1" />
+        <property name="name" value="Iphone 14 Plus" />
+        <property name="description" value="made in US" />
+        <property name="price" value="2780" />
+    </bean>
+
+    <bean id="product2" class="vn.edu.tdtu.Product" scope="prototype">
+        <constructor-arg ref="product1" />
+    </bean>
+
+    <bean id="product3" class="vn.edu.tdtu.Product" scope="singleton">
+        <property name="id" value="2" />
+        <property name="name" value="Samsung Galaxy Z-Flip" />
+        <property name="description" value="made in South Korea" />
+        <property name="price" value="2910" />
+    </bean>
+</beans>

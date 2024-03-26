@@ -1,0 +1,2 @@
+Pdf Text Writer:
+Hello Lab6 Exercise4
